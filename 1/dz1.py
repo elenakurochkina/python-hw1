@@ -6,7 +6,7 @@
 k = int(input("количество отломленных долек"))
 n = int(input("укажите ширину шоколадки"))
 m = int(input("укажите длину шоколадки"))
-if k%n==0 and k<m*n:
+if k%n==0 or k%m==0 and k<m*n:
     print("yes")
 else:
     print("no")
